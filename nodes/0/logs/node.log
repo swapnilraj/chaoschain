@@ -1,0 +1,22 @@
+warning: `/Users/swp/.cargo/config` is deprecated in favor of `config.toml`
+note: if you need to support cargo 1.38 or earlier, you can symlink `config` to `config.toml`
+2025-01-19T16:55:27.486961Z  INFO node{moniker=test-0}:node{moniker=test-0}: Discovery is disabled
+2025-01-19T16:55:27.487024Z  INFO node{moniker=test-0}:node{moniker=test-0}: Using Kademlia selector
+2025-01-19T16:55:27.498908Z  INFO node{moniker=test-0}:node{moniker=test-0}: Opened WAL at nodes/0/wal/consensus.wal
+2025-01-19T16:55:27.555342Z  INFO node{moniker=test-0}:node{moniker=test-0}:network{peer=12D3KooWAPucUHKQBcRxbK8326dm7ZkhH3Gi2v7jAq9WLmv4vYif}: Dialing peer at /ip4/127.0.0.1/tcp/27001, retry #0
+2025-01-19T16:55:27.556400Z  INFO node{moniker=test-0}:node{moniker=test-0}:network{peer=12D3KooWAPucUHKQBcRxbK8326dm7ZkhH3Gi2v7jAq9WLmv4vYif}: Dialing peer at /ip4/127.0.0.1/tcp/27002, retry #0
+2025-01-19T16:55:27.557300Z DEBUG node{moniker=test-0}:node{moniker=test-0}:network{peer=12D3KooWAPucUHKQBcRxbK8326dm7ZkhH3Gi2v7jAq9WLmv4vYif}: Node is listening address=/ip4/127.0.0.1/tcp/27000
+2025-01-19T16:55:27.559798Z  INFO node{moniker=test-0}:metrics: Serving metrics address=127.0.0.1:29000
+2025-01-19T16:55:27.560395Z  INFO node{moniker=test-0}:node{moniker=test-0}:consensus{height=1 round=-1}: Listening address=/ip4/127.0.0.1/tcp/27000
+2025-01-19T16:55:27.560643Z ERROR node{moniker=test-0}:node{moniker=test-0}:network{peer=12D3KooWAPucUHKQBcRxbK8326dm7ZkhH3Gi2v7jAq9WLmv4vYif}: Error dialing peer: Failed to negotiate transport protocol(s): [(/ip4/127.0.0.1/tcp/27001: : Connection refused (os error 61): Connection refused (os error 61): Connection refused (os error 61))]
+2025-01-19T16:55:27.560693Z ERROR node{moniker=test-0}:node{moniker=test-0}:network{peer=12D3KooWAPucUHKQBcRxbK8326dm7ZkhH3Gi2v7jAq9WLmv4vYif}: Error dialing peer: Failed to negotiate transport protocol(s): [(/ip4/127.0.0.1/tcp/27002: : Connection refused (os error 61): Connection refused (os error 61): Connection refused (os error 61))]
+2025-01-19T16:55:27.560803Z  INFO node{moniker=test-0}:node{moniker=test-0}:consensus{height=1 round=-1}: Starting new height height=1
+2025-01-19T16:55:27.560861Z  INFO node{moniker=test-0}:node{moniker=test-0}:consensus{height=1 round=-1}: Starting new round height=1 round=0 proposer=C8F5568BF647008361D5D9A8979C1B7C1E9F4200
+2025-01-19T16:55:27.566592Z DEBUG node{moniker=test-0}:node{moniker=test-0}:wal{height=0}: Flushed WAL to disk  
+2025-01-19T16:55:27.566701Z DEBUG node{moniker=test-0}:node{moniker=test-0}:consensus{height=1 round=-1}: Transitioned to new step step.previous=Unstarted step.new=Propose
+2025-01-19T16:55:27.566731Z  INFO node{moniker=test-0}:node{moniker=test-0}:consensus{height=1 round=-1}: Scheduling timeout round=0 step=Propose
+2025-01-19T16:55:27.566779Z  INFO node{moniker=test-0}:node{moniker=test-0}:consensus{height=1 round=-1}: Requesting value height=1 round=0
+2025-01-19T16:55:27.566801Z DEBUG node{moniker=test-0}:node{moniker=test-0}:consensus{height=1 round=-1}: Replaying inputs count=0
+2025-01-19T16:55:27.567479Z DEBUG node{moniker=test-0}:node{moniker=test-0}:sync{height.tip=1 height.sync=1}: Starting new height height=1
+2025-01-19T16:55:27.567519Z DEBUG node{moniker=test-0}:node{moniker=test-0}:wal{height=1}: WAL already at height, ignoring height=1
+2025-01-19T16:55:27.567959Z ERROR node{moniker=test-0}:node{moniker=test-0}:consensus{height=1 round=-1}: Error when checking and replaying WAL: Messaging failed because channel is closed height=1
